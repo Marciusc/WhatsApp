@@ -1,0 +1,69 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.container {
+	height: 100%;
+  margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+.header {
+	background: lightgreen;
+	height: 72px;
+	min-height: 72px;
+	width: 100%;
+}
+main {
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+}
+main > .header {
+	background: darkgreen;
+}
+.search {
+	background: darkkhaki;
+	height: 72px;
+	padding: 16px;
+}
+.field {
+	background: white;
+	height: 100%;
+}
+.contacts {
+	flex: 1;
+	overflow-y: scroll;
+}
+.impar {
+	background: darkgray;
+}
+.par {
+	background: lightgray;
+}
+.impar, .par {
+	height: 72px;
+}
+.display {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+.message {
+	flex: 1;
+	background: lightblue;
+}
+.footer {
+	background: darkgray;
+	height: 72px;
+}
+
+.display > div {
+	width: 100%;
+
+}
